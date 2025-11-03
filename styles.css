@@ -8,7 +8,7 @@
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  font-size: 1.1em;
+  font-size: 105%; /*1.1rem;*/
 }
 
 :root {
@@ -30,8 +30,8 @@
 }
 
 .calculator {
-  width: 25rem;
-  height: 40rem;
+  width: 55vh;
+  height: 80vh;
   margin-bottom: 10vh;
   background-color: black;
   padding: 1.3rem;
@@ -54,11 +54,12 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  font-size: 2em;
+  
 }
 
 .screen p {
   margin: auto 1rem;
+  font-size: 1.9rem;
 }
 
 .title {
@@ -78,7 +79,7 @@
 }
 
 .bottom button {
-  margin: 0.7rem;
+  margin: 10%;
   background-color: var(--color-button);
   border-radius: 50%;
   display: flex;

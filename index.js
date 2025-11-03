@@ -149,16 +149,22 @@ function isOperator(char){
     return false;
 }
 
+function limitDecimals(number, maxDecimals) {
+    const factor = Math.pow(10, maxDecimals);
+    return Math.round(number * factor) / factor;
+}
+
+
 function calculate(num1, num2, operator){
     switch (operator){
         case '+':
-            return (num1+num2);
+            return limitDecimals((num1+num2),11);
         case '-':
-            return (num1-num2);
+            return limitDecimals((num1-num2), 11);
         case '÷':
-            return (num1/num2);
+            return limitDecimals((num1/num2), 11);
         case 'X':
-            return (num1*num2);
+            return limitDecimals((num1*num2),11);
     }
 }
 
