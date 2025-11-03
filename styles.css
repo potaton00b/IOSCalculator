@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1em;
+}
+
+:root {
+  --color-primary: #333333;
+  --color-danger: #ff8c00;
+  --color-secondary: #e2ceb6;
+  --color-dark: #0c161b;
+  --color-light: #a4a4a4;
+  --color-button: #515151;
+  --color-button-pressed: #a7a7a7;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+}
+
+.calculator {
+  width: 25rem;
+  height: 40rem;
+  margin-bottom: 10vh;
+  background-color: black;
+  padding: 1.3rem;
+  border-radius: 20px;
+}
+
+.top {
+  background-color: black;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.screen {
+  height: 50%;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 2em;
+}
+
+.screen p {
+  margin: auto 1rem;
+}
+
+.title {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  color: white;
+}
+
+.bottom {
+  height: 73%;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.bottom button {
+  margin: 0.7rem;
+  background-color: var(--color-button);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+button.operator {
+  background-color: var(--color-danger);
+  transition: background-color 0.5s ease;
+}
+
+#AC {
+  background-color: var(--color-light);
+  color: black;
+}
+
+button.pressed {
+    background-color: var(--color-button-pressed);
+    transform: scale(0.98);
+}
+
+button.flashed{
+    background-color: white;
+    color: var(--color-danger);
+
+}
+
+button.ACFlash{
+    background-color: #dddddd !important; 
+}
