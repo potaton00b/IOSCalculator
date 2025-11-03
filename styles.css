@@ -9,6 +9,11 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 105%; /*1.1rem;*/
+  touch-action: manipulation; /* Prevents double-tap zoom */
+  user-select: none;          /* Prevents text selection */
+  -webkit-user-select: none;  /* Safari specific */
+  -webkit-touch-callout: none; /* Prevents callout on long press */
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight */
 }
 
 :root {
